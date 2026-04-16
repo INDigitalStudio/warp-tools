@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "mcp-orchestrator": {
+      "source": "mcp-orchestrator",
+      "install_path": "projects/mcp-orchestrator",
+      "install_dependencies": true,
+      "audit_script": "audit:bulk",
+      "mcp_servers": {
+        "warp-orchestrator": {
+          "command": "node",
+          "args": [
+            "${INSTALL_PATH}/server.mjs"
+          ],
+          "working_directory": "${GLOBAL_DIR}"
+        }
+      }
+    }
+  }
+}

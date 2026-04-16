@@ -1,0 +1,31 @@
+{
+  "projects": {
+    "orchestrator": {
+      "source": "orchestrator",
+      "install_path": "projects/orchestrator",
+      "install_dependencies": true,
+      "install_command": [
+        "uv",
+        "sync",
+        "--no-dev"
+      ],
+      "audit_command": [
+        "uv",
+        "run",
+        "--with",
+        "pip-audit",
+        "pip-audit"
+      ],
+      "mcp_servers": {
+        "warp-orchestrator": {
+          "command": "${INSTALL_PATH}/.venv/bin/python",
+          "args": [
+            "-m",
+            "mcp_orchestrator"
+          ],
+          "working_directory": "${INSTALL_PATH}"
+        }
+      }
+    }
+  }
+}

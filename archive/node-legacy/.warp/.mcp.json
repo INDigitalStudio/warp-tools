@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "warp-orchestrator": {
+      "command": "node",
+      "args": [
+        "mcp-orchestrator/server.mjs"
+      ],
+      "working_directory": "/Users/ima/ws/warp"
+    }
+  }
+}

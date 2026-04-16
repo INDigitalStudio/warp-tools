@@ -1,0 +1,16 @@
+{
+  "name": "warp-mcp-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP server that emulates subagent fanout and hook-like pre/post checks.",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs",
+    "audit:bulk": "python3 scripts/bulk-audit.py"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "zod": "^3.23.8"
+  }
+}

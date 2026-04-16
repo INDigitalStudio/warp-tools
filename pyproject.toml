@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "warp-tools"
+version = "0.2.0"
+description = "CLI for managing custom Warp tools subprojects."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+warp-tools = "cli.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cli"]
+
+[tool.uv]
+package = true

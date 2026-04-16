@@ -1,0 +1,25 @@
+{
+  "name": "warp-dev-tools",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Installable CLI app for managing custom Warp tools projects.",
+  "bin": {
+    "warp-tools": "./cli/warp-tools.mjs"
+  },
+  "scripts": {
+    "warp-tools": "node ./cli/warp-tools.mjs",
+    "install:app": "bash ./scripts/install-cli-app.sh",
+    "uninstall:app": "bash ./scripts/uninstall-cli-app.sh"
+  },
+  "files": [
+    "cli",
+    "projects.registry.json",
+    "mcp-orchestrator",
+    "scripts/install-cli-app.sh",
+    "scripts/uninstall-cli-app.sh"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

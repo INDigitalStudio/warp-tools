@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "warp-orchestrator"
+version = "0.2.0"
+description = "Local MCP server that emulates subagent fanout and hook-like pre/post checks."
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.18.0,<2.0.0"]
+
+[project.scripts]
+warp-orchestrator = "mcp_orchestrator:main"
+
+[tool.hatch.build.targets.wheel]
+include = ["mcp_orchestrator.py", "plugins/**"]
+
+[tool.uv]
+package = true

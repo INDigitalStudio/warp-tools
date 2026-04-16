@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "warp-orchestrator": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "orchestrator",
+        "python",
+        "-m",
+        "mcp_orchestrator"
+      ],
+      "working_directory": "/Users/ima/ws/warp"
+    }
+  }
+}

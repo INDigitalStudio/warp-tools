@@ -1,0 +1,28 @@
+{
+  "plugins": {
+    "plugin-dev-starter": {
+      "name": "plugin-dev-starter",
+      "command": "python3 /private/tmp/warp-plugin-smoke/projects/orchestrator/plugins/plugin-dev-starter/plugin_dev_starter_hook.py",
+      "hookCommands": {
+        "preflight": "python3 /private/tmp/warp-plugin-smoke/projects/orchestrator/plugins/plugin-dev-starter/plugin_dev_starter_hook.py",
+        "postflight": "python3 /private/tmp/warp-plugin-smoke/projects/orchestrator/plugins/plugin-dev-starter/plugin_dev_starter_hook.py"
+      },
+      "hookTargets": [
+        "preflight",
+        "postflight"
+      ],
+      "source": "orchestrator-default",
+      "sourceCommandLine": "builtin:plugin-dev-starter",
+      "createdAt": "2026-04-16T14:34:56.276038+00:00",
+      "updatedAt": "2026-04-16T14:34:56.276038+00:00",
+      "metadata": {
+        "originPlugin": "plugin-dev",
+        "referenceUrl": "https://github.com/anthropics/claude-code/tree/main/plugins/plugin-dev",
+        "starter": true,
+        "adapterId": "plugin-dev-starter",
+        "pluginRoot": "/private/tmp/warp-plugin-smoke/projects/orchestrator/plugins/plugin-dev-starter",
+        "manifestPath": "/private/tmp/warp-plugin-smoke/projects/orchestrator/plugins/plugin-dev-starter/plugin.json"
+      }
+    }
+  }
+}

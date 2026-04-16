@@ -1,0 +1,18 @@
+{
+  "name": "github-starter",
+  "description": "Starter adapter for GitHub-style plugin install commands translated into orchestrator hooks.",
+  "version": "0.1.0",
+  "reference_url": "https://docs.anthropic.com/en/discover-plugins",
+  "components": [
+    "mcp",
+    "hooks"
+  ],
+  "orchestrator_hooks": {
+    "preflight": {
+      "command": "python3 github_starter_hook.py"
+    },
+    "postflight": {
+      "command": "python3 github_starter_hook.py"
+    }
+  }
+}

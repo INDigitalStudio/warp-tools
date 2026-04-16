@@ -1,0 +1,20 @@
+{
+  "name": "plugin-dev-starter",
+  "description": "Starter plugin adapted from Claude plugin-dev patterns for orchestrator hook bridging.",
+  "version": "0.1.0",
+  "reference_url": "https://github.com/anthropics/claude-code/tree/main/plugins/plugin-dev",
+  "components": [
+    "commands",
+    "skills",
+    "agents",
+    "hooks"
+  ],
+  "orchestrator_hooks": {
+    "preflight": {
+      "command": "python3 plugin_dev_starter_hook.py"
+    },
+    "postflight": {
+      "command": "python3 plugin_dev_starter_hook.py"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+.venv/
+venv/
+
+# Testing and tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Environment files
+.env
+.env.*
+
+# Editor/IDE artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local project runtime/state files
+.hippo/
+.warp-orchestrator.plugin-secrets.json
+.warp-orchestrator.plugins.json
+.warp-orchestrator.marketplaces.json
